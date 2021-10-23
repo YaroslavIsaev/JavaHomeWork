@@ -16,9 +16,7 @@ public class Bingo {
             attempt++;
             System.out.println("Введите число: ");
             number = scan.nextInt();
-
             if(number<0) { System.out.println("Пока неудачник!");  break;}
-
             if (number<generator) System.out.println("Мое число - Больше!");
             else if (number>generator) System.out.println("Мое число - Меньше!");
             else System.out.println("Бинго, Вы угадали с " + attempt + " попытки!");
