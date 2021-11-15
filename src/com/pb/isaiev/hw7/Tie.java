@@ -3,8 +3,8 @@ package com.pb.isaiev.hw7;
 public class Tie extends Clothes implements ManClothes {
 
 
-    public Tie (Sizes size, String color, int cost) {
-            super(size, color, cost);
+    public Tie (String type, Sizes size, String color, int cost) {
+        super(type, size, color, cost);
         }
 
         @Override

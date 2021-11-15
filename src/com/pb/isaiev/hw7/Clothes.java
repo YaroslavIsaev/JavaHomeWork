@@ -1,11 +1,13 @@
 package com.pb.isaiev.hw7;
 
 public abstract class Clothes {
+    private String type;
     private Sizes size;
     private String color;
     private int cost;
 
-    public Clothes(Sizes size, String color, int cost) {
+    public Clothes(String type, Sizes size, String color, int cost) {
+        this.type = type;
         this.size = size;
         this.color = color;
         this.cost = cost;
@@ -13,7 +15,7 @@ public abstract class Clothes {
 
     @Override
     public String toString() {
-    return "[ " + "Размер: " + size + ", Цвет: " + color+ ", Цена: " + cost + " ]";
+    return type + " [ " + "Размер: " + size + ", Цвет: " + color+ ", Цена: " + cost + " ]";
     }
 }
 

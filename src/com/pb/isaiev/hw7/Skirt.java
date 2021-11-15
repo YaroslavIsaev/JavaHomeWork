@@ -2,8 +2,8 @@ package com.pb.isaiev.hw7;
 
 public class Skirt extends Clothes implements WomenClothes{
 
-    public Skirt (Sizes size, String color, int cost) {
-            super(size, color, cost);
+    public Skirt (String type, Sizes size, String color, int cost) {
+            super(type, size, color, cost);
         }
 
         @Override
